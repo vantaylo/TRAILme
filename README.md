@@ -16,10 +16,7 @@ Project Board Link on Github - [Project Board](https://github.com/TRAILme-APP/TR
 - [User Stories](#user-stories)
 - [Wire Frames](#wire-frames)
 - [Flow Charts](#flow-chart)
-- [Project Description](#project-description)
 - [Technology Used](#technology-used)
-- [Core Node Dependencies](#core-node-depencencies)
-- [Reference Links](#reference-links)
 - [APIs Used](#api-list)
 - [ER Diagram](#api-list)
 
@@ -76,5 +73,3 @@ SO THAT I can find a hiking trail that suites what I am looking for
 | OpenWeather    |
 
 ## ER Diagram
-
-## Future Development
