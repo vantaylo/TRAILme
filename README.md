@@ -2,7 +2,7 @@
 
 ## Project Description
 
-TRAILme is a mobile friendly web app that finds hiking trails based on the user's location, range from user location and trail level prefrence. The user is able to signup and login to a personal account, where they can view saved trails and activity from their Fitbit.
+TRAILme is a mobile friendly web app that finds hiking trails based on the user's location and range from user location, as well as trail level preference. The user is able to signup and login to a personal account, where they can view saved trails and activity from their Fitbit.
 
 ## Reference Links
 
