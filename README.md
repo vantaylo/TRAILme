@@ -36,8 +36,6 @@ To make a web app that uses Hiking Project API to gather hiking trails near you.
 - The user can save and view hiking trails to a list on their account.
 - The user can view Fitbit activity in their account.
 
----
-
 ## User Stories
 
 ```
@@ -46,19 +44,13 @@ I WANT to be able to see the nearest trail to my location at my desired skill le
 SO THAT I can find a hiking trail that suites what I am looking for
 ```
 
----
-
 ## Wire Frames
 
 <img src="homepagePrototype.png" width="250" /> <img src="loginPage.png" width="250" /> <img src="resultsPage.png" width="250" />
 
----
-
 ## Flow Chart
 
 <img src="TRAILmeV2MERNflowchart.png" width="500" />
-
----
 
 ## Technology Used
 
@@ -74,8 +66,6 @@ SO THAT I can find a hiking trail that suites what I am looking for
 - Auth0
 - Heroku
 
----
-
 ## API List
 
 | Provider       |
@@ -85,15 +75,6 @@ SO THAT I can find a hiking trail that suites what I am looking for
 | Hiking Project |
 | OpenWeather    |
 
----
-
-
 ## ER Diagram
 
-
-
---
-
 ## Future Development
-
---to be done when deadline is met--
