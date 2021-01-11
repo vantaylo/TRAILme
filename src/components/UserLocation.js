@@ -1,16 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
-import Form from "react-bootstrap/Form";
-import axios from "axios";
-import Geocode from "react-geocode";
+import dotenv from "dotenv";
 import "../App.css";
 
+dotenv.config();
+
 var NodeGeocoder = require("node-geocoder");
-// import { Geocoder } from "node-geocoder";
 
 let autoComplete;
 
 function SearchLocationInput(props) {
+  console.log("This works 3:", props)
+
   const loadScript = (url, callback) => {
+  
     let script = document.createElement("script");
     script.type = "text/javascript";
 
@@ -51,28 +53,16 @@ function SearchLocationInput(props) {
     updateQuery(query);
     console.log("This is the addressObject: ", addressObject);
 
-    Geocode.setApiKey(process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
-
-    Geocode.fromAddress(addressObject.formatted_address).then(
-      (response) => {
-        const { lat, lng } = response.results[0].geometry.location;
-        console.log("LAT LONG DROP DOWN: ", lat, lng);
-        props.updateLat(lat);
-        props.updateLong(lng);
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
   }
   const [query, setQuery] = useState("");
   const autoCompleteRef = useRef(null);
 
   useEffect(() => {
-    loadScript(
-      `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_HIKING_PROJECT_API_KEYX}&libraries=places`,
-      () => handleScriptLoad(setQuery, autoCompleteRef)
-    );
+    
+      loadScript(
+        `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_HIKING_PROJECT_API_KEY}&libraries=places`,
+        () => handleScriptLoad(setQuery, autoCompleteRef)
+      );
 
     navigator.geolocation.getCurrentPosition(async (position) => {
       const latitude = position.coords.latitude;
@@ -97,6 +87,8 @@ function SearchLocationInput(props) {
         apiKey: `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`,
         formatter: "json",
       };
+
+      console.log("var options =", options);
 
       var geocoder = NodeGeocoder(options);
 
@@ -130,3 +122,5 @@ function SearchLocationInput(props) {
 }
 
 export default SearchLocationInput;
+
+social Dynamics, individualization

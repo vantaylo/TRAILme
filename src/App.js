@@ -10,7 +10,7 @@ import SelectPath from "./components/SelectPath";
 import RangeInput from "./components/RangeInput";
 import OpenWeather from "./components/OpenWeather";
 import Result from "./components/DifficultyLevel/Result";
-import GetFitBit from "./components/GetFitBit";
+// import GetFitBit from "./components/GetFitBit";
 
 import "./App.css";
 
@@ -62,7 +62,7 @@ function App() {
         />
       )}
 
-      <GetFitBit />
+      {/* <GetFitBit /> */}
     </div>
   );
 }

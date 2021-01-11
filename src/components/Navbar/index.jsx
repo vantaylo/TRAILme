@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import LoginButton from "./LoginButton";
 import LogoutButton from "./LogoutButton";
 import TrailsComplete from "./TrailsComplete";
@@ -6,10 +6,6 @@ import Analytics from "./Analytics";
 import {
   Navbar,
   Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
 } from "react-bootstrap";
 
 import "../../App.css";

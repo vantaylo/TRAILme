@@ -3,6 +3,9 @@ import axios from "axios";
 import { Table } from "react-bootstrap";
 import Hour from "./Hour";
 import "./style.css"
+import dotenv from "dotenv";
+
+dotenv.config();
 
 function GetWeather(props) {
   const [weather, setWeather] = useState({

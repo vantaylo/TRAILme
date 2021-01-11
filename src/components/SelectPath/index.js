@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 // import UserLocation from "../UserLocation";
 import Difficultylevel from "../DifficultyLevel";
-import { Container, Row, Col, Button, Nav } from "react-bootstrap";
+import { Container, Row, Col, Nav } from "react-bootstrap";
 
 function SelectPath(props) {
-  const [path, setPath] = useState("");
+  const [setPath] = useState("");
 
   const handleInputChange = (event) => {
     // Destructure the name and value properties off of event.target

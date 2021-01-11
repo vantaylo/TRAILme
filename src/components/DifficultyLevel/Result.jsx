@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import CardColumns from "react-bootstrap/CardColumns";
 import dotenv from "dotenv";
 
@@ -38,7 +38,7 @@ class Result extends Component {
                 <Card.Img variant="top" src={e.imgSmallMed} />
                 <Card.Body>
                   <Card.Title>
-                    <a href={e.url} target="_blank">
+                    <a href={e.url} target="_blank" rel="noopener noreferrer">
                       {e.name}
                     </a>{" "}
                   </Card.Title>
