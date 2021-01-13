@@ -20,25 +20,10 @@ function GetWeather(props) {
           `https://api.openweathermap.org/data/2.5/onecall?lat=${props.submitLat}&lon=${props.submitLong}&exclude=daily&appid=`+process.env.REACT_APP_OPENWEATHER_API_KEY
         )
         .then((response) => {
-          console.log(response);
-          console.log("openweather response: " + response.data);
           setWeather(response.data);
-          console.log("Weather Info: " + weather);
         });
     }
   }, []);
-  // console.log(
-  //   "outside of the useEffect " + weather.hourly.map((item) => item.dt)
-  // );
-
-  // axios.get('https://api.openweathermap.org/data/2.5/onecall?lat=30.2672&lon=-97.7431&exclude=daily&appid=' + process.env.REACT_APP_OPENWEATHER_API_KEY)
-  // .then(response => {
-  //   console.log(response);
-  //   setWeather(response);
-  //   console.log("Weather Info: ");
-  //   console.log(weather);
-
-  // })
 
   return (
     <Table responsive>
