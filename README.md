@@ -72,4 +72,29 @@ SO THAT I can find a hiking trail that suites what I am looking for
 | Hiking Project |
 | OpenWeather    |
 
-## ER Diagram
+## Core Node Dependencies
+- Create-React-App using npx create-react-app my-app
+
+- @auth0/auth0-react using npm i @auth0/auth0-react
+
+- Axios using npm i Axios
+
+- Bootstrap using npm i Bootstrap
+
+- Compression using npm i Compression
+
+- Dotenv using npm i Dotenv
+
+- Moment using npm i Moment
+
+- Prop-types using npm i Prop-types
+
+- Google-maps-react using npm i Google-maps-react
+
+- Node-geocoder using npm i Node-geocoder
+
+- Express using npm i Express
+
+- Mongoose using npm i Mongoose
+
+- Morgan using npm i Morgan
