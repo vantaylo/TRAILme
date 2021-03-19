@@ -16,7 +16,7 @@ class Result extends Component {
     axios
       .get(
         `https://www.hikingproject.com/data/get-trails?lat=${this.props.submitLat}&lon=${this.props.submitLong}&maxDistance=${this.props.submitRange}&key=` +
-          process.env.REACT_APP_HIKING_PROJECT_API_KEY
+          process.env.REACT_APP_HIKING_PROJECT_API_KEY 
       )
       // .then((response) => console.log(response.data.trails))
       .then((response) => this.setState({ trail: response.data.trails }));
@@ -34,7 +34,7 @@ class Result extends Component {
         <CardColumns className="p-3">
           {this.state.trail.map((e) => {
             return (
-              <Card>
+              <Card key={e.id}>
                 <Card.Img variant="top" src={e.imgSmallMed} />
                 <Card.Body>
                   <Card.Title>

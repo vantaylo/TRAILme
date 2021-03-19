@@ -62,7 +62,10 @@ function SearchLocationInput(props) {
 
     navigator.geolocation.getCurrentPosition(async (position) => {
       const latitude = position.coords.latitude;
+      console.log("*", latitude);
+
       const longitude = position.coords.longitude;
+      console.log("**", longitude);
 
       props.updateLat(latitude);
       props.updateLong(longitude);
