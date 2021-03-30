@@ -6,7 +6,7 @@ TRAILme is a mobile friendly web app that finds hiking trails based on the user'
 
 ## Reference Links
 
-Deployed Link on Heroku - [TRAILme App Live Link](https://trailme.herokuapp.com/)
+Deployed Link on Heroku - [TRAILme App Live Link](https://vt-trailme.herokuapp.com/)
 
 Project Board Link on Github - [Project Board](https://github.com/TRAILme-APP/TRAILme/projects/2)
 
