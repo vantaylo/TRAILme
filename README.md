@@ -28,10 +28,8 @@ To make a web app that uses Hiking Project API to gather hiking trails near you.
 
 - The user can find hiking trails near there current location or chosen location.
 - The user can find hiking trails within a range distance of their choosed location.
-- The user can find hiking trails based on a particular difficulty level.
-- The user can see a 10 day forecast for the area selected.
-- The user can login to a personal portal to view saved trails.
-- The user can save and view hiking trails to a list on their account.
+- The user can find hiking trails at a particular level.
+- The user can see a hourly forecast for their choosen area.
 - The user can view Fitbit activity in their account.
 
 ## User Stories
