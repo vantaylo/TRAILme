@@ -44,7 +44,9 @@ SO THAT I can find a hiking trail that suites what I am looking for
 
 ## Wire Frames
 
-<img src="readme_materials/homepagePrototype.png" width="250" /> <img src="resultsPage.png" width="250" /> <img src="readme_materials/loginPage.png" width="250" />
+<img src="readme_materials/homepagePrototype.png" width="250" /> 
+<img src="readme_materials/resultsPage.png" width="250" />
+<img src="readme_materials/loginPage.png" width="250" />
 
 ## Flow Chart
 
