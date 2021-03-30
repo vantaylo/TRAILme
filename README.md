@@ -23,10 +23,11 @@ Project Board Link on Github - [Project Board](https://github.com/TRAILme-APP/TR
 ---
 
 ## Application MVP
+
 To make a web app that uses Hiking Project API to gather hiking trails near you.
 
 - The user can find hiking trails near there current location or chosen location.
-- The user can find hiking trails within a range distance of their choosed location. 
+- The user can find hiking trails within a range distance of their choosed location.
 - The user can find hiking trails based on a particular difficulty level.
 - The user can see a 10 day forecast for the area selected.
 - The user can login to a personal portal to view saved trails.
@@ -43,11 +44,11 @@ SO THAT I can find a hiking trail that suites what I am looking for
 
 ## Wire Frames
 
-<img src="homepagePrototype.png" width="250" /> <img src="resultsPage.png" width="250" /> <img src="loginPage.png" width="250" />
+<img src="readme_materials/homepagePrototype.png" width="250" /> <img src="resultsPage.png" width="250" /> <img src="readme_materials/loginPage.png" width="250" />
 
 ## Flow Chart
 
-<img src="TRAILmeV2MERNflowchart.png" width="500" />
+<img src="readme_materials/TRAILmeV2MERNflowchart.png" width="500" />
 
 ## Technology Used
 
@@ -73,6 +74,7 @@ SO THAT I can find a hiking trail that suites what I am looking for
 | OpenWeather    |
 
 ## Core Node Dependencies
+
 - Create-React-App using `npx create-react-app my-app`
 - @auth0/auth0-react using `npm i @auth0/auth0-react`
 - Axios using `npm i Axios`

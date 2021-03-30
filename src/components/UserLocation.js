@@ -46,19 +46,22 @@ function SearchLocationInput(props) {
 
   async function handlePlaceSelect(updateQuery) {
     const addressObject = autoComplete.getPlace();
+    console.log("***", addressObject);
+
     const query = addressObject.formatted_address;
+    console.log("****", query);
 
     updateQuery(query);
   }
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("Finding your location...");
   const autoCompleteRef = useRef(null);
 
   useEffect(() => {
 
-      loadScript(
-        `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&libraries=places`,
-        () => handleScriptLoad(setQuery, autoCompleteRef)
-      );
+    loadScript(
+      `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&libraries=places`,
+      () => handleScriptLoad(setQuery, autoCompleteRef)
+    );
 
     navigator.geolocation.getCurrentPosition(async (position) => {
       const latitude = position.coords.latitude;
