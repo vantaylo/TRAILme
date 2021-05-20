@@ -46,10 +46,8 @@ function SearchLocationInput(props) {
 
   async function handlePlaceSelect(updateQuery) {
     const addressObject = autoComplete.getPlace();
-    console.log("***", addressObject);
 
     const query = addressObject.formatted_address;
-    console.log("****", query);
 
     updateQuery(query);
   }
@@ -65,10 +63,8 @@ function SearchLocationInput(props) {
 
     navigator.geolocation.getCurrentPosition(async (position) => {
       const latitude = position.coords.latitude;
-      console.log("*", latitude);
 
       const longitude = position.coords.longitude;
-      console.log("**", longitude);
 
       props.updateLat(latitude);
       props.updateLong(longitude);
